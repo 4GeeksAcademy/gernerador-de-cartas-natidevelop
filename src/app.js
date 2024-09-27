@@ -7,6 +7,7 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   generadorCarta();
+  document.querySelector("button").addEventListener("click", generadorCarta);
 };
 function generadorCarta() {
   const palo = ["♦", "♥", "♠", "♣"];
@@ -15,8 +16,12 @@ function generadorCarta() {
   let paloAleatorio = palo[Math.floor(Math.random() * palo.length)];
   console.log(numeroAleatorio, paloAleatorio);
   document.getElementById("numero").innerHTML = numeroAleatorio;
-  document.getElementById("paloArriba").innerHTML = paloAleatorio;
-  document.getElementById("paloAbajo").innerHTML = paloAleatorio;
+  document.getElementById(
+    "paloArriba"
+  ).innerHTML = `<span>${paloAleatorio}</span>`;
+  document.getElementById(
+    "paloAbajo"
+  ).innerHTML = `<span>${paloAleatorio}</span>`;
   if (paloAleatorio == "♥" || paloAleatorio == "♦") {
     document.getElementById("paloAbajo").style.color = "red";
     document.getElementById("paloArriba").style.color = "red";
