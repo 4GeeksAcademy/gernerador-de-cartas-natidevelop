@@ -2,11 +2,20 @@
 body {
   background-color: green;
 }
+#paloArriba {
+  /* transform: rotate(-25deg); */
+  font-family: "Times New Roman", Times, serif;
+}
 #paloAbajo span {
   display: inline-block;
   transform: rotate(180deg);
+  font-family: "Times New Roman", Times, serif;
 }
 
 .numero {
-  font-size: 100px;
+  font-size: 120px;
+  font-family: "Times New Roman", Times, serif;
+}
+.card {
+  border-radius: 1rem;
 }

@@ -6,6 +6,7 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function() {
+  setInterval(generadorCarta, 10000);
   generadorCarta();
   document.querySelector("button").addEventListener("click", generadorCarta);
 };
