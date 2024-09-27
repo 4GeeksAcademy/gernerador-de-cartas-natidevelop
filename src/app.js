@@ -26,8 +26,10 @@ function generadorCarta() {
   if (paloAleatorio == "♥" || paloAleatorio == "♦") {
     document.getElementById("paloAbajo").style.color = "red";
     document.getElementById("paloArriba").style.color = "red";
+    document.getElementById("numero").style.color = "red";
   } else {
     document.getElementById("paloAbajo").style.color = "black";
     document.getElementById("paloArriba").style.color = "black";
+    document.getElementById("numero").style.color = "black";
   }
 }

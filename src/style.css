@@ -2,20 +2,26 @@
 body {
   background-color: green;
 }
-#paloArriba {
-  /* transform: rotate(-25deg); */
-  font-family: "Times New Roman", Times, serif;
+#paloArriba span {
+  transform: rotate(-25deg);
 }
 #paloAbajo span {
+  transform: rotate(140deg);
+}
+#paloAbajo span,
+#paloArriba span {
   display: inline-block;
-  transform: rotate(180deg);
+  font-size: 90px;
+  line-height: 0.8;
   font-family: "Times New Roman", Times, serif;
+  flex: 0 1 auto;
 }
 
 .numero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 120px;
   font-family: "Times New Roman", Times, serif;
-}
-.card {
-  border-radius: 1rem;
+  flex: 1;
 }
